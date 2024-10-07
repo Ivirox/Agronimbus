@@ -1,4 +1,3 @@
-# Agronimbus
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,9 +11,9 @@
     <p>Explore the future of farming:</p>
     <ul>
         <li>View our <a href="https://www.canva.com/design/DAGS15NUIcY/TuKvAskkUNod5amwAFMCPg/watch?utm_content=DAGS15NUIcY&utm_campaign=designshare&utm_medium=link&utm_source=editor">interactive demo on Canva</a>.</li>
-        <li>Check out our <a href="https://www.figma.com/proto/8bnVCMe6ALvU8b5qmkprCM/NASA-AGRONIMBUS?node-id=1-138&node-type=canvas&t=Vv0KW6ZLFOQbIHk1-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A138">design prototype on Figma</a>.</li> 
+        <li>Check out our <a href="https://www.figma.com/proto/8bnVCMe6ALvU8b5qmkprCM/NASA-AGRONIMBUS?node-id=1-138&node-type=canvas&t=Vv0KW6ZLFOQbIHk1-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A138">design prototype on Figma</a>.</li>
     </ul>
-    ![image](https://github.com/user-attachments/assets/b92e4f14-e4f1-4590-b10c-68e4ce635848)
-
+    <!-- Optionally, you can embed an image using an <img> tag if it's available via a direct URL -->
+    <!-- <img src="https://example.com/path/to/image.jpg" alt="Description of image"> -->
 </body>
 </html>
