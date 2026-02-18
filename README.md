@@ -1,3 +1,7 @@
+<div align="center">
+  <img src="./assets/Agronimbus-Hero.svg" width="100%" alt="Agronimbus Banner"/>
+</div>
+
 <p align="center">
-  <img src="./assets/banner-agronimbus.svg" alt="Agronimbus Banner" width="100%"/>
+  🌐 <a href="https://ivirox.github.io/Agronimbus/">Ver la página del proyecto</a>
 </p>
