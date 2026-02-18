@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-label="Agronimbus banner">
+  <defs>
+    <!-- Fondo -->
+    <radialGradient id="bgRad" cx="50%" cy="45%" r="70%">
+      <stop offset="0%" stop-color="#16361b"/>
+      <stop offset="55%" stop-color="#0d1f0f"/>
+      <stop offset="100%" stop-color="#071207"/>
+    </radialGradient>
+
+    <!-- Brillo central -->
+    <radialGradient id="glow" cx="52%" cy="42%" r="55%">
+      <stop offset="0%" stop-color="#4a9550" stop-opacity="0.35"/>
+      <stop offset="70%" stop-color="#4a9550" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#4a9550" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Degradado del título -->
+    <linearGradient id="titleGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="55%" stop-color="#76c27a"/>
+      <stop offset="100%" stop-color="#c8962a"/>
+    </linearGradient>
+
+    <!-- Degradado botón principal -->
+    <linearGradient id="btnGold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e6b84a"/>
+      <stop offset="100%" stop-color="#c8962a"/>
+    </linearGradient>
+
+    <!-- Sombras suaves (compatibles) -->
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+
+    <style>
+      /* Importante: sin fuentes externas, solo system-ui */
+      .badgeText { font: 700 12px/1 system-ui, -apple-system, Segoe UI, Roboto, Arial; letter-spacing: 2.6px; fill:#e6b84a; }
+      .title { font: 900 130px/1 system-ui, -apple-system, Segoe UI, Roboto, Arial; fill: url(#titleGrad); letter-spacing: -2px; }
+      .subtitle { font: 700 14px/1 system-ui, -apple-system, Segoe UI, Roboto, Arial; letter-spacing: 6px; fill:#d6b055; opacity:.95; }
+      .para { font: 500 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Arial; fill:#d8e2d6; opacity:.85; }
+      .btnLabel { font: 700 16px/1 system-ui, -apple-system, Segoe UI, Roboto, Arial; fill:#0b140b; }
+      .btnLabelGhost { font: 700 16px/1 system-ui, -apple-system, Segoe UI, Roboto, Arial; fill:#e8f0e6; }
+      .smallIcon { fill: currentColor; }
+    </style>
+  </defs>
+
+  <!-- Base -->
+  <rect width="1200" height="700" fill="url(#bgRad)"/>
+  <rect width="1200" height="700" fill="url(#glow)"/>
+
+  <!-- “Grid” sutil -->
+  <g opacity="0.08" stroke="#4a9550" stroke-width="1">
+    <path d="M0 90 H1200 M0 180 H1200 M0 270 H1200 M0 360 H1200 M0 450 H1200 M0 540 H1200 M0 630 H1200"/>
+    <path d="M120 0 V700 M240 0 V700 M360 0 V700 M480 0 V700 M600 0 V700 M720 0 V700 M840 0 V700 M960 0 V700 M1080 0 V700"/>
+  </g>
+
+  <!-- Órbita punteada -->
+  <g opacity="0.22" fill="none" stroke="#4a9550" stroke-width="2" stroke-dasharray="6 12">
+    <ellipse cx="600" cy="290" rx="540" ry="230"/>
+  </g>
+
+  <!-- Partículas -->
+  <g opacity="0.35">
+    <circle cx="160" cy="210" r="3" fill="#4a9550"/>
+    <circle cx="240" cy="140" r="2" fill="#4a9550"/>
+    <circle cx="1040" cy="180" r="3" fill="#c8962a"/>
+    <circle cx="980" cy="120" r="2" fill="#c8962a"/>
+    <path d="M160 210 L240 140" stroke="#4a9550" stroke-width="1" stroke-dasharray="4 8" opacity="0.7"/>
+    <path d="M1040 180 L980 120" stroke="#c8962a" stroke-width="1" stroke-dasharray="4 8" opacity="0.7"/>
+  </g>
+
+  <!-- Badge superior -->
+  <g transform="translate(350 78)" filter="url(#softShadow)">
+    <rect x="0" y="0" width="500" height="36" rx="18" fill="#0f2411" stroke="#c8962a" stroke-opacity="0.65"/>
+    <circle cx="26" cy="18" r="5" fill="#c8962a"/>
+    <text class="badgeText" x="50" y="23">NASA SPACE APPS CHALLENGE • TEAM PROMETEOS</text>
+  </g>
+
+  <!-- Título -->
+  <text class="title" x="95" y="260">AGRONIMBUS</text>
+
+  <!-- Subtítulo -->
+  <text class="subtitle" x="165" y="330">SATELLITE INTELLIGENCE FOR SUSTAINABLE AGRICULTURE</text>
+
+  <!-- Párrafo -->
+  <g transform="translate(210 372)">
+    <text class="para">
+      <tspan x="0" y="0">Transform the way you farm with Agronimbus — an innovative platform powered</tspan>
+      <tspan x="0" y="28">by NASA’s real-time satellite data and advanced AI algorithms, designed to</tspan>
+      <tspan x="0" y="56">boost productivity and resilience against climate variability.</tspan>
+    </text>
+  </g>
+
+  <!-- Botones -->
+  <g transform="translate(230 520)">
+    <!-- Botón 1 (gold) -->
+    <g filter="url(#softShadow)">
+      <rect x="0" y="0" width="260" height="56" rx="14" fill="url(#btnGold)"/>
+    </g>
+    <g transform="translate(22 18)" color="#0b140b">
+      <path class="smallIcon" d="M0 0 L0 20 L18 10 Z"/>
+    </g>
+    <text class="btnLabel" x="62" y="36">View Prototype</text>
+
+    <!-- Botón 2 (ghost) -->
+    <g transform="translate(290 0)">
+      <g filter="url(#softShadow)">
+        <rect x="0" y="0" width="240" height="56" rx="14" fill="#0f2411" opacity="0.9" stroke="#2d6a31" stroke-opacity="0.7"/>
+      </g>
+      <g transform="translate(22 18)" color="#e8f0e6">
+        <path class="smallIcon" d="M10 0a10 10 0 1 0 0.01 0Z" fill="none" stroke="currentColor" stroke-width="2"/>
+        <path class="smallIcon" d="M8 6 L16 10 L8 14 Z" />
+      </g>
+      <text class="btnLabelGhost" x="62" y="36">Watch Demo</text>
+    </g>
+
+    <!-- Botón 3 (ghost) -->
+    <g transform="translate(550 0)">
+      <g filter="url(#softShadow)">
+        <rect x="0" y="0" width="240" height="56" rx="14" fill="#0f2411" opacity="0.9" stroke="#2d6a31" stroke-opacity="0.7"/>
+      </g>
+      <g transform="translate(22 17)" color="#e8f0e6">
+        <rect class="smallIcon" x="2" y="0" width="16" height="20" rx="3" fill="none" stroke="currentColor" stroke-width="2"/>
+        <line class="smallIcon" x1="5" y1="6" x2="15" y2="6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        <line class="smallIcon" x1="5" y1="12" x2="12" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </g>
+      <text class="btnLabelGhost" x="62" y="36">Presentation</text>
+    </g>
+  </g>
+
+  <!-- Vignette suave -->
+  <rect width="1200" height="700" fill="none" stroke="#000" stroke-opacity="0.35" stroke-width="60" opacity="0.35"/>
+</svg>
